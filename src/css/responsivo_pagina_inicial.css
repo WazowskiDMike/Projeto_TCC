@@ -1,0 +1,62 @@
+/* /* Adicionando consulta de mídia para telas menores   */
+ @media(max-width: 1023px) { 
+
+    .img .senai-fundo {
+        width: 100vw;
+        min-height: 100vh;
+        position: fixed;
+    }
+
+    .img .logo {
+        width: auto;
+        height: auto;
+        position: absolute;
+        margin-left: 165px;
+        top: 50px;
+    }
+
+    .img {
+        width: 100vw;
+    }
+
+    .caixa-cadastro {
+        width: 50%;
+        height: auto;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .pagina-inicial {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+} 
+
+@media(max-width: 500px){
+    body{
+        overflow-y: scroll;
+    }
+    .pagina-inicial{
+        align-items: center;
+    }
+
+    .img{
+        height: 100vh;
+        display: flex;
+        z-index: -1;
+    }
+
+    .caixa-cadastro{
+        top: 50px;
+    }
+
+    .logo-senai{
+        position: absolute;
+        top: 10px;
+    }
+    .container{
+        height: 0px;
+    }
+}
