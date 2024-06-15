@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/04/2024 às 15:18
+-- Tempo de geração: 15/06/2024 às 15:41
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,18 +41,6 @@ CREATE TABLE `avaliacoes` (
   `criterio8` int(11) NOT NULL,
   `observacoes` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Despejando dados para a tabela `avaliacoes`
---
-
-INSERT INTO `avaliacoes` (`id_avaliacao`, `id_projeto`, `nif_docente`, `criterio1`, `criterio2`, `criterio3`, `criterio4`, `criterio5`, `criterio6`, `criterio7`, `criterio8`, `observacoes`) VALUES
-(1, 1, 1234567, 2, 8, 2, 5, 8, 5, 5, 4, ''),
-(3, 4, 1234567, 3, 8, 3, 6, 7, 5, 4, 4, ''),
-(4, 3, 7654321, 10, 10, 6, 7, 10, 9, 8, 8, ''),
-(5, 2, 1234567, 8, 9, 10, 9, 10, 10, 9, 7, ''),
-(8, 5, 7654321, 2, 2, 2, 2, 2, 2, 2, 2, 'Lá'),
-(16, 11, 1234567, 5, 7, 2, 6, 6, 7, 8, 2, 'sdsdaasda');
 
 -- --------------------------------------------------------
 
@@ -91,22 +79,6 @@ CREATE TABLE `projetos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Despejando dados para a tabela `projetos`
---
-
-INSERT INTO `projetos` (`id`, `nome`, `turma`, `data`) VALUES
-(1, 'Zequinha', '1MDS2', '2024-04-20'),
-(2, 'TCC 1', '3RT2', '2024-04-20'),
-(3, 'TCC 2', '1MDS2', '2024-04-20'),
-(4, 'TESTE', 'TESTE', '2024-04-20'),
-(5, 'OI', 'OI', '2024-04-20'),
-(7, 'TCC 1', '3TR2', '2024-04-20'),
-(8, 'LINDAS', 'LINDAS', '2024-04-20'),
-(10, 'ABC', 'TURMA1', '2024-04-20'),
-(11, 'TURMA1', 'TURMA1', '2024-04-20'),
-(12, 'ABC', 'ABC', '2024-04-20');
-
---
 -- Índices para tabelas despejadas
 --
 
@@ -139,19 +111,19 @@ ALTER TABLE `projetos`
 -- AUTO_INCREMENT de tabela `avaliacoes`
 --
 ALTER TABLE `avaliacoes`
-  MODIFY `id_avaliacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_avaliacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de tabela `docentes`
 --
 ALTER TABLE `docentes`
-  MODIFY `id_docente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_docente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `projetos`
 --
 ALTER TABLE `projetos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Restrições para tabelas despejadas
